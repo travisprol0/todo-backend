@@ -9,7 +9,10 @@
 User.delete_all
 Task.delete_all
 
-Task.create(text: "Buy rice", category: "Food")
+Task.create(text: "Make Bed", category: "Misc")
+Task.create(text: "Cook Dinner", category: "Food")
+Task.create(text: "Walk Dog", category: "Misc")
+
 # [
 #       {
 #         text: "Buy rice",
