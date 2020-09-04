@@ -8,6 +8,7 @@
 
 User.delete_all
 Task.delete_all
+Completed.delete_all
 
 Task.create(text: "Make Bed", category: "Misc")
 Task.create(text: "Cook Dinner", category: "Food")
