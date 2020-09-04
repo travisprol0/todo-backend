@@ -10,6 +10,17 @@ class Api::V1::TasksController < ApplicationController
         render json: task
     end
 
+    def show
+        task = Task.find(params[:id])
+        render json: task
+    end
+
+    def destroy
+        task = Task.find(params[:id])
+        task.destroy
+        render json: task
+    end
+
     private
     def task_params
         params.require(:task).permit(:text, :category)
